@@ -3,5 +3,40 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizibg: border-box;
     box-sizing: border-box;
+}
 
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* end of global rules*/
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+}
+
+
+/*small screen*/
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*medium screen*/
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*large screen*/
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
 }
