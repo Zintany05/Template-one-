@@ -1,0 +1,7 @@
+* {
+    /* this ensures that the box sizing is good even for old websites*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizibg: border-box;
+    box-sizing: border-box;
+
+}
