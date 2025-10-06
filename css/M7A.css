@@ -244,7 +244,7 @@ body {
 
 .cta-button1 {
     display: block;
-    padding: 0;
+    padding: 3px;
     transition: 0.3s;
     width: max-content;
 
