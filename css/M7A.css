@@ -12,6 +12,7 @@
 
 body {
     font-family: "Work Sans", sans-serif;
+    background-color: aliceblue;
 }
 
 .container {
@@ -106,6 +107,7 @@ body {
     position: absolute;
     right: 5px;
     top: -20px;
+
 }
 
 .header .links ul {
@@ -119,6 +121,9 @@ body {
     top: calc(100% + 15px);
     display: none;
     z-index: 1;
+    border-radius: 10px;
+    box-shadow: .5em 4px 2em rgb(37, 40, 46);
+
 
 }
 
@@ -136,10 +141,12 @@ body {
     text-decoration: none;
     color: #1c1a1a;
     transition: 0.3s;
+
 }
 
 .cta-button:hover {
     padding-left: 50px;
+    text-decoration: none;
 
 }
 
@@ -147,7 +154,7 @@ body {
 
 /* Start landing section */
 .landing {
-    background-image: url(../images/mountain.jpg);
+    background-image: url(../images/erico-marcelino-91QHQ3GGh9I-unsplash.jpg);
     background-size: cover;
     height: calc(100vh - 64px);
     position: relative;
@@ -163,7 +170,7 @@ body {
 
 .landing .intro-text h1 {
     margin: 0;
-    color: var(--burger-color);
+    color: rgb(19, 122, 211);
     font-weight: bold;
     font-size: 50px;
 }
@@ -175,3 +182,80 @@ body {
 }
 
 /* End landing section */
+
+/*start features sections*/
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: aliceblue;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.features .feats {
+    padding: 20px;
+    text-align: center;
+}
+
+.features .feats i {
+    color: var(--burger-color);
+}
+
+.features .feats i:hover {
+    transform: scale(1.1);
+}
+
+.features .feats h3 {
+    margin: 30px 0;
+    /* top and bottom 30 and left and right 0*/
+}
+
+.features .feats p {
+    line-height: 1.8;
+}
+
+#hoto {
+    margin: 18px auto;
+}
+
+#hoto:hover {
+    background-image: linear-gradient(to right, rgb(236, 56, 11), rgb(217, 151, 29));
+}
+
+#mindo {
+    margin: 18px auto;
+}
+
+#mindo:hover {
+    background-image: linear-gradient(to right, rgb(37, 188, 234), rgb(150, 16, 162));
+}
+
+#eato {
+    margin: 18px auto;
+}
+
+#eato:hover {
+    background-image: linear-gradient(to right, rgb(31, 180, 28), rgb(57, 109, 24));
+}
+
+.cta-button1 {
+    display: block;
+    padding: 0;
+    transition: 0.3s;
+    width: max-content;
+
+}
+
+.cta-button1:hover {
+    transform: scale(1.1);
+    width: max-content;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+/* End features sections*/
