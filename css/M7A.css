@@ -76,7 +76,6 @@ body {
 /* End Components */
 /* start header*/
 .header {
-
     padding: 20px;
 }
 
@@ -88,7 +87,6 @@ body {
 
 .header .links {
     position: relative;
-    right: 0;
 
 }
 
@@ -178,7 +176,7 @@ body {
     padding: 30px;
     text-decoration: none;
     color: #1c1a1a;
-    transition: 0.3s;
+    transition: 1.5s;
 
 }
 
@@ -225,7 +223,7 @@ body {
 .features {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: aliceblue;
+    background-color: #e3edf7;
 }
 
 .features .container {
@@ -308,18 +306,22 @@ body {
 
 .services .service-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    min-width: fit-content;
     gap: 20px;
     margin-top: 40px;
+    place-items: center;
 }
 
 .serv {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(56, 56, 56, 0.7);
     transition: transform 0.3s ease;
     text-align: center;
+    max-width: 300px;
+    margin: 20px;
 }
 
 .serv:hover {
@@ -331,4 +333,80 @@ body {
     margin-bottom: 10px;
 }
 
+.image-section {
+    flex: 1;
+}
+
+.imageshadow {
+    box-shadow: 0 4px 12px rgba(56, 56, 56, 0.7);
+}
+
+.imageshadow {
+    width: 64%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 60px;
+    transition: 0.8s;
+
+}
+
+.imageshadow:hover {
+    transform: scale(1.1);
+}
+
+.containimg {
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+@media(max-width:1199px) {
+    .imageshadow {
+        display: none;
+    }
+}
+
 /*  End Special services */
+
+/* start portfolio */
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #e3edf7;
+}
+
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+
+.portfolio .card {
+    background-color: white;
+    padding-bottom: 20px;
+    text-align: center;
+    transition: 0.9s;
+
+}
+
+.portfolio .card:hover {
+    transform: scale(1.1);
+}
+
+.portfolio .card img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.portfolio .card .info {
+    padding: 20px;
+}
+
+/* end portfolio */
