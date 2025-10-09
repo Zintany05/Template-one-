@@ -363,6 +363,7 @@ body {
 
 .containimg {
     margin-top: 80px;
+    margin-left: 20px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -423,6 +424,79 @@ body {
 
 .portfolio .card .info p {
     color: #3a3a3a;
+}
+
+.About {
+    padding: 30px;
+    background-color: #e3edf7;
+}
+
+.about-content {
+    display: flex;
+    /* margin: 0; */
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.text-stay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 12px rgba(56, 56, 56, 0.7);
+
+}
+
+.about-content .text-stay h3 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.about-content .text-stay p {
+    font-size: 20px;
+    background-color: rgb(213, 213, 214);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(56, 56, 56, 0.7);
+    transition: 0.5s;
+    width: 500px;
+}
+
+.about-content .text-stay p:hover {
+    transform: scale(1.1);
+}
+
+.about-content #sandimg {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 400px;
+    height: auto;
+    object-fit: fill;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(56, 56, 56, 0.7);
+}
+
+@media(max-width:1000px) {
+    .about-content #sandimg {
+        display: none;
+    }
+
+
+}
+
+@media(max-width:715px) {
+    .text-stay {
+        max-width: 300px;
+    }
+
+    .about-content .text-stay p {
+        max-width: 250px;
+    }
 }
 
 /* end portfolio */
