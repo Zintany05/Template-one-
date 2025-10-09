@@ -500,3 +500,68 @@ body {
 }
 
 /* end portfolio */
+
+/* Start Contact */
+.Contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: aliceblue;
+}
+
+.Contact .info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.Contact .info .label {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--burger-color);
+    letter-spacing: -2px;
+}
+
+.Contact .info #Link {
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    color: cadetblue;
+    text-decoration: none;
+}
+
+.Contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.Contact .info .social a {
+    color: cadetblue;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.Contact .info .social a:hover {
+    transform: scale(1.1);
+}
+
+@media(max-width:767px) {
+
+    .Contact .info .label,
+    .Contact .info #Link {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:400px) {
+
+    .Contact .info .label,
+    .Contact .info #Link {
+        font-size: 20px;
+    }
+
+}
+
+/* End Contact  */
